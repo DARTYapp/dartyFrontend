@@ -1,35 +1,58 @@
-<!-- <link rel="preload" href="images/battle.png" as="image"> -->
-
 <body>
     <div class="banner">
         <div class="navbar">
-            <!-- <img src="images/RIFTlogo.png" class="logo"> -->
+            <img src="images/dartyIcon.png" class="logo">
             <ul>
-                <!-- <li><a href="">Home</a></li>
-                <li><a href="dashboard">Dashboard</a></li> -->
-                <!-- <li><a href="">Player Search</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="sorts">Sorting</a></li> -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </div>
         <div class="content">
-            <h1>DARTY</h1>
+            <h1 id="mainText">DARTY</h1>
             <div>
-                <a href="signup"><button type="button"><span></span>SIGN UP</button></a>
-                <a href="login"><button type="button"><span></span>LOGIN</button></a>
+                <a href="signup.html"><button type="button"><span></span>SIGN UP</button></a>
+                <a href="login.html"><button type="button"><span></span>LOGIN</button></a>
             </div>
         </div>
     </div>
 </body>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+    #mainText {
+        font-family: 'Bungee', cursive;
+    }
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .content, .navbar {
+        animation: transitionIn 1s;
+    }
+
     * {
         margin: 0;
         padding: 0;
         font-family: sans-serif;
     }
 
+    
 
+    .logo {
+        border-radius: 10%;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid; /* Add this line */
+    }
 
     .banner {
         width: 100%;
